@@ -30,6 +30,12 @@ namespace GC_Deliverable1_PreWorkDateDifference
             {
                 Console.WriteLine("Enter the second date (example formats: 2017-10-07, 10-7-2017):");
                 d2 = CheckDateFormat(Console.ReadLine());
+
+                if (d2 == DateTime.MinValue)
+                {
+                    Console.WriteLine("The program finished with errors.");
+                    return;
+                }
             }
             else
             {
